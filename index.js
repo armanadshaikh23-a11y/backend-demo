@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 app.get("/secret", (req, res) => {
   res.send("Secret is: " + SECRET);
 });
-
+app.get("/test", (req, res) => {
+  res.send("CI/CD is working for auto-deployment ");
+});
 app.listen(PORT, () => {
   console.log("Server running on port " + PORT);
 });
